@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+      <title>OLivia Ros | Food Blogger</title>  
+      <meta charset="UTF-8">
+      <meta name="author" content="Denisse Orellana">
+      <meta name="description" content="Comidas del fin del mundo">
+      <meta name="keywords" content="Fotografía comida, crítica culinaria, Bloquera de viaje">
+      
+      <!-- #Viewport -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <!-- #CDN Bootstrap CSS 4.4.1 -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      
+      <!-- #Google fonts - Typografy -->
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+      
+      <!-- #Font Awesome | Iconos-->
+      <script src="https://kit.fontawesome.com/fb4446ff2d.js" crossorigin="anonymous"></script>
+      
+      <!-- #Style CSS -->
+      <link rel="stylesheet" href="assets/css/style.css">    
+    </head>
+
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
+        <div class="container"><!--1ero se genera un <div> container que incluta todo el navbar-->
+          <!--navbar-expand-lg: contiene las dimenciones de la resolucion de la pantalla, se pueden aumentar o disminuir,
+              navbar-dark: personalizan color de fondo de barra navegacion, 
+              bg-dark: personaliza color de letra barra de navegación.-->
+          <!-- #Changed: navbar-light bg-light |to  navbar-dark bg-dark (fondo oscuro negro, letra color blanco), según maqueta proyecto-->
+          <!-- #navbar-brand: identificador marca, agrega logo del proyecto-->  
+          <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Logo de OLivia Ros"></a>
+          <!--#button: muestra "boton" (acumula los nav-link) tamaño pantaña pequeño-->
+          <!--#span: crea icono "boton" del medio-->  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--#collapse navbar-collapse: contenedor principal de nuestra barra de navegacion-->
+          <!-- #classes: haran que el contenido navegacion sea ocultado en tamaño pequeños-->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <!--#nav-item active: corresponde pagina principal-->
+              <!-- #nav-link: entrega formato a cada elemento -->
+              <li class="nav-item ">
+                <a class="nav-link" href="#about">Acerca de mí <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Trabajos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        
+        </div>
+       
+      </nav>
+      
+      <header class="hero text-light text-right pt-5 mt-5">
+        <div class="container">
+          <!--text-light: color blanco 
+              text-right: contenido a la derecha
+              display-1: tamaño grande letra 
+              font-weight-bold: letra bold-->
+          <h1 class="display-1 font-weight-bold my-5 responsive-text">Comidas del fin del mundo</h1>
+          <p class="my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>    
+          <a href="#work"><button type="button" class="btn btn-outline-info btn-lg">Trabajos</button></a>
+          <a href="#contact"><button type="button" class="btn btn-info btn-lg">Contacto</button></a>
+          <!--btn-lg: genera q el boton se agrende y adapte a la pantalla
+          Se agrega link a (<a href=""></a>) más "Button" de Bootstrap
+          py-5: padding top y bottom, 
+          pt-5: paddinf top,
+          mt-5: margin top-->
+        </div>
+      </header>
+      
+      <!-- #Carousel Begins-->
+      <div class="container my-5 py-3 d-none d-md-block">
+        <!--d-none d-md-block: .d-{breakpoint}-{value} for sm, md, lg, and xl. For example, .d-lg-none sets display: none; on both lg and xl screens.
+            More examples:
+            <div class="d-lg-none">hide on screens wider than lg</div>
+            <div class="d-none d-lg-block">hide on screens smaller than lg</div>-->
+        <div class="row">
+          <div class="col-4 p-4 tex-right">
+            <h2 class="font-weight-bold">Me has visto en:</h2>
+          </div>
+
+          <div class="col-8 bg-secondary text-white rounded pt-4 pb-5">
+
+            <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#blogCarousel" data-slide-to="1"></li>
+              </ol>
+
+              <div class="carousel-inner text-center">
+
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-3">  
+                      <i class="fab fa-codepen fa-2x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Codepen"></i>
+                    </div>
+                    <div class="col-3">  
+                      <i class="fab fa-apper fa-2x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Apper"></i>
+                    </div>
+                    <div class="col-3">
+                      <i class="fab fa-angrycreative fa-2x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Angry Creative"></i>  
+                    </div>
+                    <div class="col-3">
+                      <i class=" fab fa-google fa-2x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Google"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="fab fa-500px fa-2x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="500px"></i>  
+                    </div>
+                    <div class="col-3">
+                      <i class="fab fa-apple fa-2x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Apple"></i>
+                    </div>
+                    <div class="col-3">
+                      <i class="fab fa-aviato fa-2x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Aviato"></i>  
+                    </div>
+                    <div class="col-3">
+                      <i class="fab fa-d-and-d fa-2x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="D&D Beyond"></i>  
+                    </div>
+                  </div>  
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>  
+      <!-- #Carousel Ends-->
+
+      <!--#Carousel explained:
+          class="col -4" para que siempre sea 4 en XS (vista en dospositivos moviles),
+          Bootstrap Border-radius: round corners class="rounded",
+          Bootstrap color, backgroun color class="bg-secondary",
+          Verificar la cantidad de slides a mostrar y los indicadores,
+          id="name" del carousel debe ser el mismo en los indicadores data-target="#name",
+          <div class="carousel-item"> son las slides que mostraran,
+          en los indicadores; data-slide-to="0" class="active", debe ser "active" porque es la primera slide a mostrar,
+          Dentro de <div class="carousel-item active"> se generan row (filas) que contengan <col-3> para generar 3 columnas que icluyan 4 elementos
+          <ol class="carousel-indicators"> contiene los botones con los que se cambia las slides. Su posicion se cambia con CSS,
+          Luego, se cambian los li de class="carousel-indicators", para cambiar la forma de los botones con los que se cambia las slides en CSS, -->
+
+      <!--#Popovers explained:
+          1° Para agregar popovers agregar $('[data-toggle="popover"]').popover() en JS (script.js), 
+          copiar el popover a utilizar en lugar correspondiente, agregar y/o cambiar data-trigger="hover" y data-content="content" -->
+
+      <section id="about" class="container text-center my-5">
+        <h2 class="display-3 font-weight-bold my-4 responsive-text">Acerca de mí</h2>
+        <p class="my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit id, labore maxime dignissimos vitae maiores expedita quo ducimus quam, nam aspernatur ut ipsum, fugiat necessitatibus magni? Facere, aspernatur. Suscipit, labore!</p>
+      
+        <!--Grid System: 4 columnas de Bootstrap: class="row row-cols-1 row-cols-sm-2 row-cols-md-4"
+            my-3: genera margin top|bottom (arriba|abajo) entre icono, titulo y parrafo 
+            col-md-4: genera breakpoint en medio 4 col-->
+    
+        <div class="row">
+          <div class="col-md-4">
+            <i class="fas fa-camera fa-3x my-3"></i>
+            <h3 class="my-3">Fotógrafa de comida</h3>
+            <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+          </div>
+  
+          <div class="col-md-4">
+            <i class="fas fa-bullhorn fa-3x my-3"></i>
+            <h3 class="my-3">Crítica culinaria</h3>
+            <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+          </div>
+  
+          <div class="col-md-4">              
+            <i class="far fa-map fa-3x my-3"></i>
+            <h3 class="my-3">Bloggera de viajes</h3>
+            <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+          </div>
+        </div>              
+      </section>
+
+      <!--Container fluid: porque la sección ocupa todo el ancho de la pagina-->
+      <section id="work" class="container-fluid my-5 p-5 bg-info">
+        <h2 class="display-3 text-center font-weight-bold my-4 text-white responsive-text">Mis trabajos</h2>
+
+        <div class="card-deck">
+          <div class="card">
+            <img src="assets/img/card-1.jpg" class="card-img-top" alt="card-1">
+            <div class="card-body">
+              <h5 class="card-title">Asado en la Patagonia</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+              <a href="#"><button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#asado">Ver más</button></a>  
+               <!--Modals Trigger Button: se agrega data-toggle="modal" y data-target="#asado" para llamar a modals a Button. Modals se añaden al final de la seccion-->
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="assets/img/card-2.jpg" class="card-img-top" alt="card-2">
+            <div class="card-body">
+              <h5 class="card-title">Papas del fin del mundo</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+              <a href="#"><button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#papas">Ver más</button></a>  
+            </div>
+          </div>
+ 
+          <div class="card">
+            <img src="assets/img/card-3.jpg" class="card-img-top" alt="card-3">
+            <div class="card-body">
+              <h5 class="card-title">Salmones de Alaska</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+              <a href="#"><button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#salmones">Ver más</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modals Bengin: | Modal 1; #asado -->
+      <div class="modal fade" id="asado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Asado en la Patagonia</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            <img src="assets/img/card-1.jpg" class="card-img-top img-fluid my-3" alt="asado">
+              <!--En la etiqueta <img> se coloca la clase = "img-fluid", para que sea una imagen responsiva y se adapte a la pantalla-->
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellat adipisci cumque odit est optio, quae maiores corporis quos earum. Qui necessitatibus amet maiores quis fuga, sapiente in sint ab!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellat adipisci cumque odit est optio, quae maiores corporis quos earum. Qui necessitatibus amet maiores quis fuga, sapiente in sint ab!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellat adipisci cumque odit est optio, quae maiores corporis quos earum. Qui necessitatibus amet maiores quis fuga, sapiente in sint ab!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--#Button trigger Modals se coloca antes, luego Modals: se colocan al final de la sección.  
+          Recordar que data-target="#id" de Button trigger Modals, sea igual al id="papas" del cuerpo modals-->
+
+      <!--Modal 2: papas-->
+      <div class="modal fade" id="papas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Papas del fin del mundo</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            <img src="assets/img/card-2.jpg" class="card-img-top img-fluid my-3" alt="papas">
+              <!--En la etiqueta <img> se coloca la clase = "img-fluid", para que sea una imagen responsiva y se adapte a la pantalla-->
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellat adipisci cumque odit est optio, quae maiores corporis quos earum. Qui necessitatibus amet maiores quis fuga, sapiente in sint ab!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellat adipisci cumque odit est optio, quae maiores corporis quos earum. Qui necessitatibus amet maiores quis fuga, sapiente in sint ab!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellat adipisci cumque odit est optio, quae maiores corporis quos earum. Qui necessitatibus amet maiores quis fuga, sapiente in sint ab!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal 3: salmones-->
+      <div class="modal fade" id="salmones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Salmones de Alaska</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            <img src="assets/img/card-3.jpg" class="card-img-top img-fluid my-3" alt="salmones">
+              <!--En la etiqueta <img> se coloca la clase = "img-fluid", para que sea una imagen responsiva y se adapte a la pantalla-->
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellat adipisci cumque odit est optio, quae maiores corporis quos earum. Qui necessitatibus amet maiores quis fuga, sapiente in sint ab!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellat adipisci cumque odit est optio, quae maiores corporis quos earum. Qui necessitatibus amet maiores quis fuga, sapiente in sint ab!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellat adipisci cumque odit est optio, quae maiores corporis quos earum. Qui necessitatibus amet maiores quis fuga, sapiente in sint ab!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #Modals End -->
+
+      <section id="contact" class="container my-5">
+        <h2 class="display-3 font-weight-bold text-center my-4 responsive-text">Contactame</h2>
+        <p class="text-center my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
+
+        <!--Add Typeform-->
+        <div class="typeform-widget" data-url="https://denisseporellana.typeform.com/to/z43NOJ" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=z43NOJ&utm_source=typeform.com-01E76CQYDTW9TV038WDJ9T24C9-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> 
+        </div>
+
+      </section>
+
+      <footer class="bg-dark text-center text-light p-3 align-middle">
+        <p>Olivia Ros 2019. Todos los derechos reservados.</p>
+      </footer>
+      <!--bg-dark: background oscuro
+          text-center: centrar texto 
+          text-light: color letra blanco 
+          p-3: padding en todos lados-->
+
+      <!-- #Jquery 3.4.1 | Agrega interactividad y efectos visuales al sitio web-->
+      <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+        <!--Borramos version Slim <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            Dejamos la version uncompressed de https://code.jquery.com/ --->
+      
+      <!-- #Popper 1.16.0 | Libreria de JavaScript tooltips y popovers en elementos html-->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  
+      <!-- #Bootstrap JS 4.4.1 | Componentes de JavaScript para Bootstrap. Usa Jquery, Jpopper para funcionar-->  
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+      <!-- #Scripts (Jquery, Popper y Bootstrap JS) van ANTES del CIERRE de la etiqueta BODY: la pagina carga desde arriba hacia abajo. Los archivos JS son mas pesados, puede significar carga mas lenta de la pagina. Es mejor dejarlos hasta el final para que todos los archivos se carguen ANTES de llamar a los script -->
+    
+      <!-- #Mi Script-->
+      <script src="assets/js/script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,71 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-image: url(../img/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    padding-bottom: 10rem;
+}
+/*Header: 
+    background-image: si no tiene contenido no se mostrará en la pagina;
+    background-repeat: no-repeat; condicion hace que no se genere un mosaico.
+    background-size: cover; condicion para que cubra la totalidad de la pantalla.
+    background-position: left; 
+*/
+
+#work img {
+    height: 232px;
+    object-fit: cover;
+    /*Propiedad para especificar como <img> or <video> cambien/ajusten tamaño en un contenedor*/
+}
+
+.carousel-indicators {
+    top: 50px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /*.carousel-indicators li : son botones que cambian las slides. Se da un mismo height and width para que sean cuadrados, y luego border-radius: 50% permiten que sean redondos*/
+}
+
+/*Media Query*/
+
+/*XS*/
+@media (min-width: 0px) {
+    .responsive-text {
+        font-size: 40px;   
+    }
+}
+
+/*SM*/
+@media (min-width: 576px) {
+    .responsive-text {
+        font-size: 40px;
+    }
+}
+
+/*MD*/
+@media (min-width: 768px) {
+    .responsive-text {
+        font-size: 40px;
+    }
+}
+
+/*LG*/
+@media (min-width: 992px) {
+    .responsive-text {
+        font-size: 80px;        
+    }
+}
+
+/*XL*/
+@media (min-width: 1200px) {
+    .responsive-text {
+        font-size: 80px;        
+    }
+}
