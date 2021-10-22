@@ -1,6 +1,6 @@
 # Olivia Ros Blog
 
-This projects present the food blog of a traveler with the differents flavors of around the world. It involves the implementation of HTML, CSS and JavaScript.
+This projects present the food blog of a traveler with differents flavors around the world. It involves the implementation of HTML, CSS and JavaScript.
 
 ## Preview
 
